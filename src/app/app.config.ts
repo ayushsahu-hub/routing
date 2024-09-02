@@ -6,4 +6,7 @@ export const appConfig: ApplicationConfig = {
     providers:[provideRouter(routes,withComponentInputBinding(),withRouterConfig({
         paramsInheritanceStrategy:'always'
     }))]
+
+    // with the use of paramsInheritanceStrategy we can get access to the dynamic parameter of the 
+    // parent route in the children route
 }
